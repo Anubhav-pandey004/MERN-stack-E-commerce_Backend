@@ -4,6 +4,7 @@ const jwt=require("jsonwebtoken")
 
 
 module.exports.userSignin=async(req,res,err)=>{
+    console.log("Request for login ",req)
 
     try {
         const {email, password} = req.body;
