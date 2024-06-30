@@ -36,7 +36,8 @@ module.exports.userSignin=async(req,res,err)=>{
 
             const tokenOption = {
                 httpOnly : true,
-                secure:true
+                secure:true,
+                sameSite:"none"
             }
 
             //cookie, passing token in cookie
